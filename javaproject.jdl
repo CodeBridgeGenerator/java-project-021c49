@@ -1,0 +1,38 @@
+application {
+  config {
+    applicationType monolith
+    authenticationType jwt
+    baseName javaproject
+    clientFramework react
+    clientPackageManager npm
+    creationTimestamp 1707296363750
+    databaseType sql
+    devDatabaseType mysql
+
+    jhiPrefix jhi
+    languages [en]
+    messageBroker false
+    microfrontend false
+    microfrontends []
+    nativeLanguage en
+    otherModules []
+    packageName my.codebridge.community.javaproject
+    prodDatabaseType mysql
+  }
+
+  entities VxOilFuturesJson
+}
+
+entity VxOilFuturesJson {
+  projectname String
+  auth String
+  database String
+  stack String
+  services String
+}
+
+
+paginate * with pagination
+service * with serviceImpl
+dto * with mapstruct
+
